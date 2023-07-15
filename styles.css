@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-bg: #73a9ad;
+  --main-text: #f5f0bb;
+  --second-bg: #90c8ac;
+  --third-bg: #c4dfaa;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: Tektur, sans-serif;
+  color: var(--main-text);
+}
+
+.main__title {
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.input__class {
+  text-align: center;
+}
+
+.input__class_input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: none;
+}
+
+.input__class_input:focus {
+  outline: none;
+}
+
+.input__class_button {
+  padding: 0.5rem;
+  background-color: var(--second-bg);
+  color: white;
+  border: none;
+}
+
+.todos__container {
+  width: 50%;
+  margin: auto;
+  margin: 1rem auto 0;
+}
+
+.todos__container_div {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  background-color: var(--third-bg);
+  color: black;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.todos__container_div_todo {
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.todos__container_div_close {
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todos__container_div_close:hover {
+  background-color: tomato;
+}
